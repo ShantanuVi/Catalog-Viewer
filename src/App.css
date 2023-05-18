@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto";
+}
+
+.grayscale {
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+
+.imageThumbnail {
+  margin-left: 10px;
+  width: 170px;
+  border-radius: 15px;
+}
+
+.selectedImage {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  width: 95%;
+  height: 500px;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.titleText {
+  text-align: center;
+  margin: 0px;
+  font-size: 28px;
+}
+
+.imageText {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #939c7f;
+}
+
+.thumbnailsContainer {
+  justify-content: center;
+  /* margin-top: 20px; */
+  margin: 20px 0 0 20px;
+  /* width: 800px; */
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.thumbnailsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.floatingActionButton {
+  background-color: transparent;
+  transition: color 0.3s ease-in-out;
+  opacity: 0.7;
+}
+
+.transparent:hover {
+  opacity: 1;
+}
+
+.buttonsContainer {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.largeButton {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.playButtonContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
